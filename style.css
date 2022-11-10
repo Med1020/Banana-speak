@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:wght@100;500&display=swap');
+:root{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --dark-yellow:#f6c616;
+    --light-yellow:#f4dd4b;
+    --dark-blue:#0c457A;
+    --blue:#115695;
+}
+
+*{
+   
+    font-family:  'Poppins', sans-serif;;
+}
+
+body{
+    /* background-color: var(--dark-yellow); */
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-image: url('tile_background.png');
+    background-repeat: no-repeat;
+}
+
+header{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    background-color:#115695;
+    color:#f6c616;
+}
+
+.form{
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction:column ;
+    align-items: flex-end;
+
+}
+
+label{
+    align-items: center;
+}
+
+input{
+    width: 30%;
+    height: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    
+}
+input:focus{
+    outline: none;
+    
+}
+input:focus::placeholder{
+    color: transparent;
+}
+
+
+img{
+    
+    height: 192px;
+    width: 158px;
+}
+
+.btn-translate{
+    
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--light-yellow);
+    color: var(--blue);
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px grey;
+}
+
+.btn-translate:hover{
+    background-color: var(--dark-yellow);
+    color: #0c457A;
+    box-shadow: 2px 2px 10px 0px grey;
+    transition: 0.3s background-color;
+}
+.btn-translate:active{
+    background-color: var(--light-yellow);
+    transition: 0.3s box-shadow;
+}
+
+.output{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative ;
+    left: 160px;
+}
+
+.error{
+    color: red;
+    font-size: 1rem;
+    margin: 5px;
+}
